@@ -1,0 +1,151 @@
+body {
+  flex-direction: row;
+  gap: 0;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 45%;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+}
+
+.sidebar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.main-area {
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+main > div {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+main > div h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+main > div .nome {
+  color: #d35400;
+  font-weight: bold;
+}
+
+main > div p {
+  font-size: 1.3rem;
+  color: #6c757d;
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.option-card {
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+  width: 17.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.option-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
+  border-color: #d35400;
+}
+
+.option-card.create {
+  background: linear-gradient(135deg, #d35400 0%, #e67e22 100%);
+  color: white;
+}
+
+.option-card.create:hover {
+  background: linear-gradient(135deg, #b84a00 0%, #d35400 100%);
+  border-color: #ffffff;
+}
+
+.option-card.list {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.option-card.list:hover {
+  background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+  border-color: #ffffff;
+}
+
+.option-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.option-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.option-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.5;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  color: #6c757d;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .main-area {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,80 @@
+body {
+  justify-content: center;
+}
+
+.error-card {
+  background-color: var(--superficie);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem var(--cor-sombra);
+  text-align: center;
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.error-card h1 {
+  font-size: 4rem;
+  color: var(--cor-erro);
+  margin-bottom: 1rem;
+}
+
+.error-card h2 {
+  font-size: 1.5rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 0.5rem;
+}
+
+.error-card p {
+  font-size: 1rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 1rem;
+}
+
+.error-card .btn-home {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto-claro);
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+.error-card .btn-home:hover {
+  background-color: var(--cor-destaque-hover);
+  transform: scale(1.05);
+}
+
+.error-card .btn-home:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(211, 84, 0, 0.5);
+}
+
+.input-error {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+.label-error {
+  color: red;
+  font-weight: bold;
+}
+
+.error-msg,
+.form-error-msg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  margin-left: 4px;
+}
+
+.error-msg i {
+  font-size: 1em;
+}
